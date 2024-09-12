@@ -1,5 +1,6 @@
 <head>
   <link rel="stylesheet" href="/src/styles/stytwo.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <header class="header sticky-top nav-bg">
@@ -19,16 +20,16 @@
           <li><a href="#inicio">inicio</a></li>
           <li><a href="#about">sobre nosotros</a></li>
 
-          <li><a href="#team">Nuestros productos</a></li>
+          <li><a href="#productos">Nuestros productos</a></li>
           <li><a href="#leales">Clientes leales</a></li>
           <li>
-            <a href="#">contacto</a>
+            <a href="#contacto">contacto</a>
           </li>
         </ul>
         <div class="header-right flex items-center justify-center space-x-4">
           <div class="header-meta">
             <ul>
-              <li>
+              <li class="ml-4">
                 <a href="#" data-bs-toggle="modal">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +114,7 @@
   />
   <div class="absolute inset-0 bg-gray-800 opacity-50"></div>
   <div
-    class="absolute inset-16 max-w-[60%] lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 mt-16"
+    class="absolute inset-16 max-w-[60%] lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 mt-32"
   >
     <div class="static"></div>
 
@@ -121,7 +122,7 @@
       class="absolute inset-x-4 top-1/2 transform -translate-y-1/2 text-base md:text-lg lg:text-xl xl:text-2xl"
     >
       <h1>GAMExSTORE</h1>
-      <h1>
+      <h1 class="mb-2">
         TODO <span class="text-red-700">SOBRE</span> VIDEOJUEGOS
       </h1>
     </div>
@@ -130,13 +131,13 @@
 
 <section id="about" class="bg-white dark:bg-gray-900">
   <div
-    class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-8 lg:grid-cols-12"
+    class="grid max-w-screen-xl px-4 mx-auto lg:gap-8 xl:gap-0 lg:py-8 lg:grid-cols-12"
   >
     <div class="mr-auto place-self-center lg:col-span-7">
       <h2
         class="max-w-2xl mb-4 text-5xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-8xl dark:text-white"
       >
-        Sobre GAME <span style="color: brown;">x</span>STORE
+        Sobre GAME<span style="color: brown;">x</span>STORE
       </h2>
       <p
         class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
@@ -158,7 +159,6 @@
         juegos favoritos, ofreciendo una plataforma fácil de usar, segura y con
         una amplia variedad de productos para todos los gustos.
       </p>
-      
     </div>
     <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
       <img
@@ -170,10 +170,190 @@
   </div>
 </section>
 
-<section id="leales">
+<section class="md:px-16 -mt-32" id="productos">
+  <div class="container mx-auto py-8">
+    <!-- Contenedor del carrusel -->
+    <div class="relative overflow-hidden">
+      <!-- Contenedor del scroll horizontal (carrusel) -->
+      <h4 class="text-center mb-16">NUESTROS PRODUCTOS</h4>
+      <div
+        class="flex space-x-4 carousel overflow-x-auto snap-x snap-mandatory px-6"
+      >
+        <!-- Tarjeta 1 -->
+
+        <div class="carousel-item md:w-1/4 flex-shrink-0 p-4">
+          <div class="bg-slate-800 shadow-lg rounded-lg h-full w-[350px]">
+            <div class="">
+              <img
+                src="https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$"
+                alt="Card 1"
+                class="h-64 object-cover rounded-t-lg w-[400px]"
+              />
+            </div>
+
+            <div class="p-4">
+              <h2 class="text-2xl font-bold">PlayStation 5</h2>
+              <p class="text-gray-400">
+                La última consola de Sony, conocida por su potente rendimiento y
+                una amplia gama de exclusivos.
+              </p>
+              <div class="h-full">
+                <button
+                class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 mt-[50px] "
+              >
+                $49.99
+              </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 2 -->
+        <div class="carousel-item md:w-1/4 flex-shrink-0 p-4">
+          <div class="bg-slate-800 shadow-lg rounded-lg text-center  w-[350px] h-full">
+            <img
+              src="https://pngimg.es/d/xbox_PNG101375.png"
+              alt="Card 2"
+              class=" h-64 object-cover rounded-t-lg  w-[190px]"
+            />
+            <div class="p-4">
+              <h2 class="text-2xl font-bold text-left">Xbox Series X</h2>
+              <p class="text-gray-400 text-left">
+                La consola de última generación de Microsoft, famosa por su alto
+                rendimiento y compatibilidad con una gran biblioteca de juegos.
+              </p>
+              <div class="h-full text-left">
+                <button
+                class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 mt-[20px] "
+              >
+                $49.99
+              </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 3 -->
+        <div class="carousel-item md:w-1/4 flex-shrink-0 p-4">
+          <div class="bg-slate-800 shadow-lg rounded-lg  w-[350px] h-full">
+            <img
+              src="https://www.pngall.com/wp-content/uploads/2/Nintendo-Switch-PNG-Image-File.png"
+              alt="Card 3"
+              class="w-full h-64 object-cover rounded-t-lg"
+            />
+            <div class="p-4">
+              <h2 class="text-2xl font-bold">Nintendo Switch</h2>
+              <p class="text-gray-400">
+                Consola híbrida que puede usarse como una consola de sobremesa o
+                portátil, con una amplia variedad de juegos exclusivos de
+                Nintendo.
+              </p>
+
+              <div class="h-full">
+                <button
+                class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 mt-[20px] "
+              >
+                $49.99
+              </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 4 -->
+        <div class="carousel-item md:w-1/4 flex-shrink-0 p-4">
+          <div class="bg-slate-800 shadow-lg rounded-lg  w-[350px]  h-full">
+            <div class="text-center">
+              <img
+              src="https://media.game.es/COVERV2/3D_L/218/218008.png"
+              alt="Card 4"
+              class=" h-64 object-cover rounded-t-lg w-[210px] "
+            />
+            </div>
+            
+            <div class="p-4">
+              <h2 class="text-2xl font-bold ">The Legend of Zelda</h2>
+              <p class="text-gray-400">
+                Tears of the Kingdom" (para Nintendo Switch): Una de las últimas entregas de la popular serie de aventuras de Zelda.
+              </p>
+              <button
+                class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 md:mt-8"
+              >
+                $49.99
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 5 -->
+        <div class="carousel-item md:w-1/4 flex-shrink-0 p-4">
+          <div class="bg-slate-800 shadow-lg rounded-lg h-full w-[350px]">
+            <div class="text-center ">
+              <img
+              src="https://media.game.es/COVERV2/3D_L/201/201050.png"
+              alt="Card 5"
+              class="w-[200px] object-cover rounded-t-lg "
+            />
+            </div>
+            
+            <div class="p-4">
+              <h2 class="text-2xl font-bold ">Elden Ring</h2>
+              <p class="text-gray-400">
+                (para PS5, Xbox Series X, PC): Un juego de rol de acción aclamado por su mundo abierto y su jugabilidad desafiante.
+              </p>
+              <button
+                class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 md:mt-8"
+              >
+                $49.99
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Controles -->
+      <div class="absolute inset-0 flex items-center justify-between px-4">
+        <button
+          class="bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500"
+          onclick="document.querySelector('.carousel').scrollBy({ left: -320, behavior: 'smooth' })"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </button>
+        <button
+          class="bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500"
+          onclick="document.querySelector('.carousel').scrollBy({ left: 320, behavior: 'smooth' })"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="-mt-40" id="leales">
   <div class="block w-full h-full">
     <div
-      class="flex items-center justify-center max-w-[950px] mx-auto mt-12 flex-0 animate-pulse animate-infinite"
+      class="flex items-center justify-center max-w-[990px] mx-auto mt-12 flex-0 animate-pulse animate-infinite"
     >
       <div class="relative z-[1000] w-full h-auto mx-auto md:aspect-[2/1]">
         <div class="h-full isolate md:aspect-[2/1]">
@@ -192,200 +372,105 @@
                       <div
                         class="relative h-full overflow-hidden border rounded-[40px] grid md:flex bg-[#2e1065]/50 border-slate-300/20 transition duration-500 ease-in-out"
                       >
-                        <div
-                          class="absolute w-1/2 rotate-45 h-[300%] left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 bg-gradient-to-r from-[#41b3ff00] via-[#b0a9ff13] to-[#41b3ff00]"
-                        >
-                        </div><span
-                          class="h-full font-mono text-center text-white font-bold ticket-dash-border-top row-[3/4] px-4 py-4 md:py-0 text-4xl md:px-4 md:text-3xl md:[writing-mode:vertical-lr] md:ticket-dash-border"
-                          >#000001</span
-                        ><div
-                          class="md:w-auto row-[2/3] mb-8 md:mb-0 left-0 mx-auto md:mx-0 h-32 md:h-[40%] relative flex justify-center w-full bottom-0 md:left-[10%] md:bottom-[40%] md:absolute"
-                        >
-                          <!--############### -->
-                          <div class="rounded-lg shadow-lg p-6">
-                            <h3 class="text-xl font-semibold mb-4">
-                              Esquema de Acumulación de Puntos
-                            </h3>
+                        <div class="max-w-4xl mx-auto px-4 mt-16">
+                          <h2 class="text-3xl font-bold text-center mb-12">
+                            Sistema de Puntos de Recompensa
+                          </h2>
+                          <p class="text-lg text-center mb-6">
+                            Acumula puntos con cada compra y canjealos por
+                            productos en nuestra tienda. A continuación, te
+                            mostramos cómo se acumulan los puntos según el costo
+                            de los productos:
+                          </p>
+                          <div
+                            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                          >
                             <div
-                              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                              class="bg-[#010721] rounded-lg shadow-lg p-6 text-center"
                             >
-                              <div
-                                class="bg-gray-50 p-4 rounded-lg text-center"
-                              >
-                                <h4
-                                  class="text-lg fon text-green-950 font-semibold mb-2"
-                                >
-                                  Hasta $50
-                                </h4>
-                                <p class="text-2xl font-bold text-green-600">
-                                  5 Puntos
-                                </p>
-                                <p class="text-gray-600 mt-2">
-                                  Por cada compra hasta $50, acumulas 5 puntos.
-                                </p>
-                              </div>
-                              <div
-                                class="bg-gray-50 p-4 rounded-lg text-center"
-                              >
-                                <h4
-                                  class="text-lg font-semibold mb-2 text-green-950"
-                                >
-                                  $51 - $100
-                                </h4>
-                                <p class="text-2xl font-bold text-green-600">
-                                  10 Puntos
-                                </p>
-                                <p class="text-gray-600 mt-2">
-                                  Por cada compra entre $51 y $100, acumulas 10
-                                  puntos.
-                                </p>
-                              </div>
-                              <div
-                                class="bg-gray-50 p-4 rounded-lg text-center"
-                              >
-                                <h4
-                                  class="text-lg font-semibold mb-2 text-green-950"
-                                >
-                                  $101 y más
-                                </h4>
-                                <p class="text-2xl font-bold text-green-600">
-                                  20 Puntos
-                                </p>
-                                <p class="text-gray-600 mt-2">
-                                  Por cada compra superior a $101, acumulas 20
-                                  puntos.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div><div
-                          class="z-10 grid w-full h-auto md:h-full pt-5 md:pt-0 grid-rows-[1fr_auto] md:grid-rows-2"
-                        >
-                          <div class="grid md:grid-cols-2">
-                            <div class="h-max">
-                              <div
-                                class="flex justify-start gap-4 text-white gap-y-2 p-5 flex-col md:items-start md:flex-row md:p-6 items-center text-center md:text-left"
-                              >
-                                <div>
-                                  <p class="text-xl font-bold">
-                                    <span class="opacity-75 text-midu-primary"
-                                      >#</span
-                                    >#####
-                                  </p><span
-                                    class="block text-sm font-normal w-max text-white/60"
-                                    >Clientes Leales</span
-                                  >
-                                </div>
-                              </div>
-                            </div><div
-                              class="items-center gap-4 p-5 flex md:block flex-col-reverse md:flex-row"
-                            >
-                              <svg
-                                preserveAspectRatio="xMidYMid"
-                                viewBox="0 0 228 198"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="1em"
-                                height="1em"
-                                class="order-1 h-auto w-9 ml-0 md:ml-auto"
-                                ><g
-                                  ><path
-                                    fill="#199afc"
-                                    d="M73.2 126.4c-15 15-15 39.3 0 54.3L19 126.4C4 111.5 4 87.2 19 72.2L73.2 18c15-15 39.2-15 54.2 0s15 39.2 0 54.2z"
-                                  ></path><path
-                                    fill="#1d5682"
-                                    d="m73.2 126.4 27.1-27.1 27.1 27.1c15 15 15 39.3 0 54.3-15 14.9-39.2 14.9-54.2 0-15-15-15-39.3 0-54.3z"
-                                  ></path><g
-                                    ><path
-                                      fill="#199afc"
-                                      d="M185.5 84.3c8.3-8.2 8.3-21.7 0-29.9l30 29.9c8.2 8.3 8.2 21.7 0 30l-30 30c-8.3 8.3-21.7 8.3-30 0s-8.3-21.7 0-30z"
-                                    ></path><path
-                                      fill="#1d5682"
-                                      d="m185.5 84.3-15 15-15-15c-8.3-8.2-8.3-21.7 0-29.9 8.3-8.3 21.7-8.3 30 0 8.3 8.2 8.3 21.7 0 29.9z"
-                                    ></path></g
-                                  ></g
-                                ></svg
-                              ><p
-                                class="block mt-2 ml-auto font-bold text-white md:ml-0 text-center mr-auto md:mr-0 md:text-right"
-                              >
-                                Puntos Leales<span
-                                  class="block text-sm font-normal text-white/60 animate-blurred-fade-in"
-                                  >000001 P</span
-                                >
+                              <h4 class="text-lg font-semibold mb-2">
+                                Hasta $50
+                              </h4>
+                              <p class="text-2xl font-bold text-green-600">
+                                5 Puntos
+                              </p>
+                              <p class="text-gray-600 mt-2">
+                                Por cada compra hasta $50, acumulas 5 puntos.
                               </p>
                             </div>
-                          </div><div
-                            class="flex flex-row-reverse items-center w-auto h-auto gap-2 mx-auto md:ml-0 justify-center md:justify-self-end md:mr-4"
-                          >
-                          </div><div
-                            class="grid self-end gap-4 grid-cols-1 md:grid-cols-[1fr_auto] md:grid-rows-[auto_auto] md:gap-0"
-                          >
                             <div
-                              class="flex flex-col justify-end px-2 md:px-0 items-center w-full md:w-auto md:items-start pb-0 md:pl-5 md:pb-5 mx-auto md:mx-0 md:row-[2/3]"
+                              class="bg-[#010721] rounded-lg shadow-lg p-6 text-center"
                             >
-                              <span class="pb-1 pl-2 text-sm text-white/80"
-                                >Gracias a:</span
-                              >
-                              <div
-                                class="flex items-center flex-wrap justify-center grid-cols-3 gap-4 px-4 py-2 bg-white/10 w-auto rounded md:rounded-full md:justify-start md:flex-nowrap"
-                              >
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  class="icon icon-tabler icon-tabler-brand-instagram"
-                                  width="44"
-                                  height="44"
-                                  viewBox="0 0 24 24"
-                                  stroke-width="1.5"
-                                  stroke="#ffffff"
-                                  fill="none"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                >
-                                  <path
-                                    stroke="none"
-                                    d="M0 0h24v24H0z"
-                                    fill="none"></path>
-                                  <path
-                                    d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
-                                  ></path>
-                                  <path
-                                    d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"
-                                  ></path>
-                                  <path d="M16.5 7.5l0 .01"></path>
-                                </svg>
-                                <a
-                                  href="https://www.instagram.com/gamexstoresv/"
-                                  >GAMExSTORE</a
-                                >
-                              </div>
+                              <h4 class="text-lg font-semibold mb-2">
+                                $51 - $100
+                              </h4>
+                              <p class="text-2xl font-bold text-green-600">
+                                10 Puntos
+                              </p>
+                              <p class="text-gray-600 mt-2">
+                                Por cada compra entre $51 y $100, acumulas 10
+                                puntos.
+                              </p>
+                            </div>
+                            <div
+                              class="bg-[#010721] rounded-lg shadow-lg p-6 text-center"
+                            >
+                              <h4 class="text-lg font-semibold mb-2">
+                                $101 y más
+                              </h4>
+                              <p class="text-2xl font-bold text-green-600">
+                                20 Puntos
+                              </p>
+                              <p class="text-gray-600 mt-2">
+                                Por cada compra superior a $101, acumulas 20
+                                puntos.
+                              </p>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div><span
-                      class="atropos-highlight"
-                      style="transform: translate3d(0px, 0px, 0px); transition-duration: 300ms; opacity: 0;"
-                    ></span></span
-                  ><span
-                    class="atropos-shadow"
-                    style="transform: translate3d(0px, 0px, -50px) scale(1); transition-duration: 300ms;"
-                  ></span></span
+                    </div></span
+                  ></span
                 ></span
               >
             </div>
           </div>
         </div>
       </div>
-    </div><div
-      class="flex flex-col items-center justify-center gap-4 mx-auto mt-16 scale-90 md:flex-row sm:scale-100"
-    >
-    </div>
-  </div>
-  <div
-    class="relative flex flex-col items-center justify-center w-full h-full gap-4 overflow-hidden rounded-lg max-w-screen-base bg-background"
-  >
-    <div
-      class="grid gap-4 md:flex md:flex-wrap md:justify-center md:grid-cols-2 lg:grid-cols-2"
-    >
     </div>
   </div>
 </section>
+
+<footer class="-mb-32 flex items-center justify-center bg-black" id="contacto">
+  <div class="w-full max-w-6xl px-4 text-white flex flex-col h-full">
+    <div class="w-full text-7xl font-bold mb-8">
+      <h1 class="w-full md:w-2/3">¿Cómo podemos ayudarte?</h1>
+    </div>
+    <div class="flex flex-col md:flex-row md:justify-between mb-8 flex-grow">
+      <p class="w-full md:w-2/3 text-gray-400">
+        ¡Estamos aquí para ayudarte! Si tienes alguna consulta sobre nuestros productos, necesitas soporte técnico o simplemente quieres ponerte en contacto con nosotros, no dudes en enviarnos un mensaje.
+      </p>
+      <div class="w-44 pt-6 md:pt-0">
+        <a class="bg-red-500 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center">Contáctanos</a>
+      </div>
+    </div>
+    <hr class="border-gray-600 mb-12" />
+    
+    <p class="text-center text-gray-600 ">Copyright © 2024 GAMExSTORE</p>
+    <hr class="border-black mb-12" />
+
+  </div>
+</footer>
+
+
+
+<style>
+ 
+ 
+  .carousel {
+    scroll-snap-type: x mandatory;
+  }
+  .carousel-item {
+    scroll-snap-align: start;
+  }
+</style>
